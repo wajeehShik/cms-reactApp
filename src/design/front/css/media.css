@@ -1,0 +1,64 @@
+@media only screen and (max-width:1024px){
+   
+header>.top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    row-gap:20px;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 68px 100px 0 68px;
+
+}
+header>.top>ul{
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+header>.content>p{
+    font-size:1em;
+    text-align:center;
+    padding-left: 0;
+}
+.container section article > section{
+    order:2;
+}
+.container section article > img{
+order:1;
+margin-bottom: 10px;
+
+
+}
+}
+@media only screen and ( max-width:800px){
+    header > .content > p{
+        font-size: .5em;
+    }
+    .container{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .container section article > img{
+        width: 347px;
+    }
+    .join-us{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .join-us > div > input{
+        width: 250px;
+    }
+
+    /* blog page */
+   /* .blog .left>img,
+   .container section article > img{
+        width: 314px;
+    }
+    .blog .right span{
+        font-size: 1em;
+    } */
+    .blog-content p{
+        max-width:370px
+    }
+}

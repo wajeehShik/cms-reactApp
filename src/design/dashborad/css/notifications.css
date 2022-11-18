@@ -1,0 +1,51 @@
+.notifiactions{
+display: flex;
+flex-direction: column;
+row-gap: 25px;
+}
+.notifiactions>article{
+    display: flex;
+    column-gap: 24px;
+    background-color: white;
+    border-radius: 12px;
+    padding-top: 33px;
+    padding-left: 13px;
+    max-width:900px;
+    font-size: 16px;
+}
+.notifiactions>article>.image{
+    position:relative;
+}
+
+.notifiactions>article>.image>.icon-notifcation{
+position: absolute;
+right: 0;
+}
+.notifiactions>article>.image>.user-image{
+    width: 70px;
+    height: 70px;
+}
+.notifiactions>article>.data>span{
+    font-size: 1.15em;
+    color:#11142D;
+}
+.notifiactions>article>.data>div{
+     display: flex;
+    column-gap: 11px;
+    color: #B2B3BD;
+}
+
+.notifiactions>article>.data>p
+{color:#808191}
+
+.notifiactions>button{
+    width: 140px;
+    height: 50px;
+    /* display: flex; */
+    align-self: center;
+    margin-bottom: 50px;
+    background: #1D968D;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #E2E2EA;
+}

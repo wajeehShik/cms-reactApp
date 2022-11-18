@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/category.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <span><span>B</span>logs</span>
+
+        <span class="tool">Admin tools</span>
+        <section>
+          <div>
+            <i class="fa-solid fa-eye fa-2x"></i>
+            <span>Overview</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <span>All Blogs</span>
+          </div>
+          <div>
+            <i class="fa fa-compass fa-2x"></i>
+            <span>Categories</span>
+          </div>
+          <div>
+            <i class="fa fa-gear fa-2x"></i>
+            <span>Settings</span>
+          </div>
+        </section>
+        <span class="line-appove">Insights</span>
+
+        <div class="notfication">
+          <i class="fa-regular fa-bell fa-2x"></i>
+          <span>Notification</span>
+          <span class="number">2</span>
+        </div>
+        <div class="user-info">
+          <figure>
+            <img src="image/avatar 1.png" />
+          </figure>
+          <div class="info">
+            <span>wajeeh ayube</span>
+            <p>admin</p>
+          </div>
+          <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- start header -->
+        <div class="header">
+          <span>Hi <span>wajeeh ayube,</span></span>
+          <form>
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </form>
+        </div>
+        <span>All Categories</span>
+        <div class="all-category">
+          <section class="green">
+            <div class="info-category">
+              <span>Design</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="orange">
+            <div class="info-category">
+              <span>Development</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="green">
+            <div class="info-category">
+              <span>Design</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="orange">
+            <div class="info-category">
+              <span>Development</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="green">
+            <div class="info-category">
+              <span>Design</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="orange">
+            <div class="info-category">
+              <span>Development</span>
+              <p>Blog No.</p>
+              <div class="time">
+                <i class="fa fa-clock"></i>
+                <span>23 Blog</span>
+              </div>
+            </div>
+            <i class="fa fa-trash"></i>
+          </section>
+          <section class="create-new" id="create-new">
+            <i class="fas fa-plus"></i>
+            <span>Create new category</span>
+          </section>
+        </div>
+
+        <!-- end header -->
+      </div>
+    </div>
+
+    <div class="modal-add" id="modal-add">
+      <section>
+        <span>Add new Category</span>
+        <p>category Name</p>
+        <input type="text" placeholder="Ex:  Development" />
+        <div>
+          <button id="cancleDelete">Cancel</button>
+          <button id="delete">Delete</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      var showCreateBlogModal = document.getElementById("create-new");
+      var createModal = document.getElementById("modal-add");
+      var constcloseModal = document.getElementById("cancleDelete");
+
+      showCreateBlogModal.addEventListener("click", () => {
+        createModal.classList.add("show");
+      });
+
+      constcloseModal.addEventListener("click", () => {
+        createModal.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <span><span>B</span>logs</span>
+
+        <span class="tool">Admin tools</span>
+        <section>
+          <div>
+            <i class="fa-solid fa-eye fa-2x"></i>
+            <span>Overview</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <span>All Blogs</span>
+          </div>
+          <div>
+            <i class="fa fa-compass fa-2x"></i>
+            <span>Categories</span>
+          </div>
+          <div>
+            <i class="fa fa-gear fa-2x"></i>
+            <span>Settings</span>
+          </div>
+        </section>
+        <span class="line-appove">Insights</span>
+
+        <div class="notfication">
+          <i class="fa-regular fa-bell fa-2x"></i>
+          <span>Notification</span>
+          <span class="number">2</span>
+        </div>
+        <div class="user-info">
+          <figure>
+            <img src="image/avatar 1.png" />
+          </figure>
+          <div class="info">
+            <span>wajeeh ayube</span>
+            <p>admin</p>
+          </div>
+          <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- start header -->
+        <div class="header">
+          <span>Hi <span>wajeeh ayube,</span></span>
+          <form>
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </form>
+        </div>
+        <span>Blog</span>
+        <div class="search">
+          <div class="left">
+            <i class="fa fa-filter"></i>
+            <select>
+              <option value="">Sort by:<b>Due Date</b></option>
+              <option value="">Sort by:<b>Due Date</b></option>
+              <option value="">Sort by:<b>Due Date</b></option>
+              <option value="">Sort by:<b>Due Date</b></option>
+            </select>
+            <select>
+              <option value="">category by:<span>Due Date</span></option>
+              <option value="">category by:<span>Due Date</span></option>
+              <option value="">category by:<span>Due Date</span></option>
+              <option value="">category by:<span>Due Date</span></option>
+            </select>
+
+            <i class="fa fa-trash"></i>
+          </div>
+          <button id="showCreateBlogModal">Create New Blog</button>
+        </div>
+        <div class="table-content">
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Category</th>
+                <th>Blog Title</th>
+                <th>Due date</th>
+                <th>Publisher</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="orange">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="sky">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="orange">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="sky">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="orange">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="sky">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="orange">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="sky">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="orange">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><span class="sky">Development2</span></td>
+                <td>Improve Your Coding Skills And Get Jobs</td>
+                <td>Dec 14, 2020</td>
+                <td>Ahmed Karim</td>
+
+                <td class="table-icon">
+                  <i class="fa fa-edit"></i>
+                  <i class="fa fa-trash openDeleteModal"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end header -->
+      </div>
+    </div>
+    <!-- show delete Modal -->
+    <div class="modal-delete" id="modal-delete">
+      <section>
+        <p>Are you sure you want to delete this blog?</p>
+
+        <div>
+          <button id="cancleDelete">Cancel</button>
+          <button id="delete">Delete</button>
+        </div>
+      </section>
+    </div>
+    <!-- end show delete Modal -->
+    <!-- start showCreateBlogModal -->
+    <div class="modal-create-blog" id="modal-create-blog">
+      <article>
+        <span>Add new Blog</span>
+        <div class="form-group">
+          <label for="fileField" class="attachment">
+            <div class="row btn-file">
+              <div class="btn-file__preview"></div>
+              <div class="btn-file__actions">
+                <div class="btn-file__actions__item col-xs-12 text-center">
+                  <div class="btn-file__actions__item--shadow">
+                    <i class="fa fa-plus fa-lg fa-fw" aria-hidden="true"></i>
+                    <div class="visible-xs-block"></div>
+                    Select file
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input name="file" type="file" id="fileField" />
+          </label>
+        </div>
+
+        <section>
+          <article class="left">
+            <div class="form-group">
+              <span>Blog title</span>
+              <input placeholder="Blog name" />
+            </div>
+            <div class="form-group">
+              <span>Publisher name</span>
+              <input placeholder="Ex. Momen M. Reyad Sisalem" />
+            </div>
+            <div class="form-group">
+              <span>Publisher name</span>
+              <select>
+                <option value="">Development</option>
+              </select>
+            </div>
+            <button id="cancle">cancle</button>
+          </article>
+          <article class="right">
+            <div class="form-group">
+              <span>Description</span>
+              <textarea placeholder="Description"></textarea>
+            </div>
+            <button class="create">Done</button>
+          </article>
+        </section>
+      </article>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
